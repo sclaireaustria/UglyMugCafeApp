@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Order Queue</h1>
+
+    <div class="row justify-content-center">
+        <div class="card" *ngFor="let order of service.orderList">
+            <div class="card-header accent-font">
+                Order #{{order.OrderId}} for {{order.CustomerName}}
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Iced Latte: {{order.IcedLatte}} <br />                
+                    White Chocolate Mocha: {{order.IcedLatte}} <br />                
+                    Dirty Horchata: {{order.IcedLatte}} <br />
+                    Chocolate Chip Latte: {{order.IcedLatte}} <br />
+                </p>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-sm btn-outline-success btn-block" (click)="onDelete(order.OrderId)">complete
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-sm btn-outline-secondary btn-block" (click)="onDelete(order.OrderId)">cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

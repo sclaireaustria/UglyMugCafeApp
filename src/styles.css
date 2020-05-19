@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import "css/bootstrap.css";
+
+body {
+    font-family: 'Bebas Neue';font-size: 22px;
+    background-color: #FFF3EA;
+}
+
+p {
+    font-size: 15px;
+}
+
+.accent-font {
+    color: #03989E;
+}
+
+.accent-item {
+    background-color: #03989E;
+    color: white;
+}
+
+.card {
+    display:inline-block;
+    width: 20%;
+    margin: 3px;
+    border: 0px;
+}
+
+.container {
+    border: 3px solid #F7D2B7;
+    margin-top: 20px;
+    background-color: #F7D2B7;
+    border-radius: 10px;
+}
+
+.full-button {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+src
+    app
+        orders
+            orders.component.ts|.html|.css
+            order
+                order.component.ts|.html|.css
+            
+            order-list
+                order-list.component.ts|.html|.css
+        
+            shared
+                order.service.ts
+                order.model.ts
+
+    
+        app.module.ts
+
+    index.html

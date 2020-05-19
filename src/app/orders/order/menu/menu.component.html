@@ -1,0 +1,31 @@
+<div class="card" *ngFor="let pd of service.productList">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Ugly Mug Cafe menu item">
+    <div class="card-body">
+        <span hidden>{{pd.ProductId}}</span>
+        <h5 class="card-title">{{pd.ProductName}}</h5>
+        <p class="card-text">{{pd.Description}}</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <span>Php {{pd.Price}}</span>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<input type="text" name="Notes" #Notes="ngModel" [(ngModel)]="service.orderDetailFormData.Notes" class="form-control" placeholder="Notes" maxlength="20" required>-->
+    </div>
+</div>
