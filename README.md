@@ -1,6 +1,17 @@
 # UglyMugCafeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+Run server:
+1. Open the 'UglyMugCafe' (https://github.com/sclaireaustria/UglyMugCafe.git) solution in Visual Studio
+2. In the Visual Studio terminal, run the following to create in your local SQL Server:
+	add-migration InitialCreation
+	update-database
+3. Debug the project
+
+Run client: 
+1. Open the 'UglyMugCafeApp' in Visual Studio Code
+2. In the VS code terminal, run 'ng serve --o'. This should open 'http://localhost:4200/'
+3. Open the url 'http://localhost:4200/order' to access the ordering page and 'http://localhost:4200/order-list' to open the order queue
 
 ## Development server
 
