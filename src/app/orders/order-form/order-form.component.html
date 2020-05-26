@@ -1,0 +1,93 @@
+<div class="container">  
+    <div class="text-center">
+        <h1 class="accent-font">Ugly Mug Cafe</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-right">Enter Name Here:</label>
+                <div class="col-sm-6">
+                    <input type="text" [value]="customerName" (input)="customerName=$event.target.value" name="customerName" class="form-control" maxlength="20" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/iced%20latte%20with%20swirl.jpg?itok=c89gvCiJ" alt="Ugly Mug Cafe menu item">
+            <div class="card-body text-center">
+                <h5 class="card-title accent-font">Iced Latte</h5>
+                <p class="card-text">Espresso + Milk</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>Php 120</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-number" min="1" max="10" name="IcedLatte" [value]="icedLatte" (input)="icedLatte=$event.target.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/GettyImages-1142205337.jpg?itok=CKkh1R-7" alt="Ugly Mug Cafe menu item">
+            <div class="card-body text-center">
+                <h5 class="card-title accent-font">White Chocolate</h5>
+                <p class="card-text">Latte + White Chocolate</p>
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <span>Php 120</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-number" min="1" max="10" name="WMC" [value]="wmc" (input)="wmc=$event.target.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/keto_bullet_coffee_vanilla.jpg?itok=nXy6PTNQ" alt="Ugly Mug Cafe menu item">
+            <div class="card-body text-center">
+                <h5 class="card-title accent-font">Dirty Horchata</h5>
+                <p class="card-text">Coconut milk + Espresso</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>Php 120</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="number" class="form-control input-number" name="dirtyHorchata" [value]="dirtyHorchata" (input)="dirtyHorchata=$event.target.value">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/1g_torani_cookie_dough-6306_0.jpg?itok=7k_fY2V6" alt="Ugly Mug Cafe menu item">
+            <div class="card-body text-center">
+                <h5 class="card-title accent-font">Chocolate Chip Latte</h5>
+                <p class="card-text">latte + CC dough</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>Php 120</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="number" class="form-control input-number" name="espresso" [value]="espresso" (input)="espresso=$event.target.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br/>
+    <div class="row justify-content-center">
+        <button id="orderBtn" class="btn btn-lg accent-item" (click)="sendOrder()">
+            Place Order
+        </button>
+    </div>
+</div>  
