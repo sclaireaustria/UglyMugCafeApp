@@ -26,6 +26,14 @@ p {
     border: 0px;
 }
 
+.content-card {
+    width: 100% !important; 
+}
+
+.repeating-div {
+    margin: 3px;
+}
+
 .container {
     border: 3px solid #F7D2B7;
     margin-top: 20px;
