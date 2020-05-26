@@ -11,6 +11,11 @@ import { OrderService } from './shared/order.service'
 import { appRoutingModule } from './app.routing';
 import { MenuComponent } from './orders/order/menu/menu.component';
 import { TempMenuComponent } from './orders/order/temp-menu/temp-menu.component';
+import { ChatComponent } from './chat/chat.app.component';
+import { ChatService } from './chat/chat.service';
+import { OrderFormService } from './orders/order-form/order-form.service';
+import { OrderFormComponent } from './orders/order-form/order-form.component';
+import { OrderQueueComponent } from './orders/order-queue/order-queue.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,10 @@ import { TempMenuComponent } from './orders/order/temp-menu/temp-menu.component'
     OrderComponent,
     OrderListComponent,
     MenuComponent,
-    TempMenuComponent
+    TempMenuComponent,
+    ChatComponent,
+    OrderFormComponent,
+    OrderQueueComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,11 @@ import { TempMenuComponent } from './orders/order/temp-menu/temp-menu.component'
     HttpClientModule, 
     appRoutingModule
   ],
-  providers: [OrderService],
+  providers: [
+    OrderService, 
+    ChatService, 
+    OrderFormService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
